@@ -1,0 +1,13 @@
+   <div class="flex left">
+        {{#if randomBeer.image_url}}
+        <img src={{randomBeer.image_url}} alt="beer">
+        {{else}}
+        <img src="https://beerconnoisseur.com/sites/default/files/styles/beer_page_245w/public/beer/over-the-edge.jpg?itok=RzjOXJlZ"
+            alt="beer">
+        {{/if}}
+    </div>
+    <div class="flex right">
+        <h2>Name: {{this.name}}</h2>
+        <p>Tagline: {{this.tagline}}</p>
+        <p>Description: {{this.description}}</p>
+    </div>
