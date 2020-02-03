@@ -1,0 +1,21 @@
+
+<div>
+    
+    {{#unless beers}}
+    <p>No beers aveilable</p>
+    {{/unless}}
+    {{#each beers}}
+    <h1>Beers For All</h1>
+    <br>
+    <div class="flex left">
+                <img src={{this.image_url}} alt="beer">
+    </div>
+    <div class="flex right">
+        <h2>Name: {{this.name}}</h2>
+        <p>Tagline: {{this.tagline}}</p>
+        <p>Description: {{this.description}}</p>
+    </div>
+        <br>
+    {{/each}}
+</div>
+
